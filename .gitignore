@@ -1,0 +1,10 @@
+# Entorno de construcción
+__pycache__/
+*.pyc
+.venv/
+.tmp/
+*.log
+# secretos — nunca deben entrar en el repo
+.gh_token
+*.token
+.env

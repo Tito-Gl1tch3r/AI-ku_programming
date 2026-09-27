@@ -1,0 +1,162 @@
+{
+  "qc_version": "1.0",
+  "checks": {
+    "esquema_arrow": {
+      "ok": true,
+      "columnas": {
+        "id": "string",
+        "split": "string",
+        "language": "string",
+        "stack": "list<item: string>",
+        "domain": "string",
+        "subdomain": "string",
+        "difficulty": "string",
+        "task_type": "string",
+        "messages": "list<item: struct<role: string, content: string>>",
+        "verification": "struct<executed: bool, steps: list<item: struct<name: string, passed: bool, detail: string>>, summary: string, harness: string>",
+        "provenance": "struct<origin: string, method: string, sources: list<item: string>, license: string, created: string, pipeline: string>",
+        "tags": "list<item: string>"
+      }
+    },
+    "registros_validos": {
+      "total": 290,
+      "con_errores": 0
+    },
+    "duplicados_exactos": 0,
+    "pares_repetitivos": [],
+    "reverificacion_muestra": {
+      "tamano_muestra": 43,
+      "porcentaje": 14.8,
+      "divergencias": []
+    },
+    "pasos_verificacion": {
+      "total": 414,
+      "superados": 414
+    },
+    "posiblemente_triviales": []
+  },
+  "distribucion_lenguaje": {
+    "python": 97,
+    "sql": 33,
+    "bash": 31,
+    "powershell": 22,
+    "javascript": 21,
+    "c": 20,
+    "php": 19,
+    "cpp": 15,
+    "java": 14,
+    "html": 9,
+    "ssh": 5,
+    "css": 4
+  },
+  "distribucion_dificultad": {
+    "hard": 143,
+    "very_hard": 104,
+    "extreme": 31,
+    "medium": 12
+  },
+  "distribucion_task_type": {
+    "implementation": 102,
+    "debugging": 92,
+    "code_review": 22,
+    "testing": 17,
+    "optimization": 17,
+    "architecture": 11,
+    "analysis": 10,
+    "refactoring": 8,
+    "automation": 5,
+    "migration": 4,
+    "scripting": 1,
+    "documentation": 1
+  },
+  "distribucion_domain": {
+    "backend": 61,
+    "systems": 46,
+    "databases": 36,
+    "scripting_automation": 33,
+    "web": 30,
+    "security": 19,
+    "data": 18,
+    "architecture": 16,
+    "tooling": 15,
+    "agentic": 8,
+    "scientific": 8
+  },
+  "distribucion_split": {
+    "train": 266,
+    "val": 15,
+    "test": 9
+  },
+  "muestra_revision_manual": [
+    {
+      "id": "aiku-prog-00098",
+      "language": "javascript",
+      "task_type": "testing",
+      "difficulty": "very_hard",
+      "resumen": "Necesito `toRoman(n)` y `fromRoman(s)` (números romanos 1..3999, forma canónica sustractiva) para el exportado"
+    },
+    {
+      "id": "aiku-prog-00035",
+      "language": "c",
+      "task_type": "debugging",
+      "difficulty": "hard",
+      "resumen": "El parser de metricas carga etiquetas de sensores en una tabla fija. Con las etiquetas del laboratorio funcion"
+    },
+    {
+      "id": "aiku-prog-00023",
+      "language": "bash",
+      "task_type": "implementation",
+      "difficulty": "hard",
+      "resumen": "Para la guardia quiero un verificador de CPU por proceso que sea EJECUTABLE EN CI (determinista) y en producci"
+    },
+    {
+      "id": "aiku-prog-00116",
+      "language": "php",
+      "task_type": "refactoring",
+      "difficulty": "very_hard",
+      "resumen": "Migración pedida por el equipo de calidad: eliminar el acceso global `DB::getInstance()` de los repositorios p"
+    },
+    {
+      "id": "aiku-prog-00148",
+      "language": "powershell",
+      "task_type": "debugging",
+      "difficulty": "hard",
+      "resumen": "Estoy preparando una llamada a una API y una búsqueda de ficheros, y me estrello con dos errores que no entien"
+    },
+    {
+      "id": "aiku-prog-00040",
+      "language": "c",
+      "task_type": "implementation",
+      "difficulty": "hard",
+      "resumen": "Implementa IPC bidireccional padre→hijo→padre con dos pipes: el padre envía la cadena «hola procesos», el hijo"
+    },
+    {
+      "id": "aiku-prog-00119",
+      "language": "php",
+      "task_type": "implementation",
+      "difficulty": "hard",
+      "resumen": "La exportación de pedidos a CSV del panel B2B tira el proceso: `fetchAll()` de 2 millones de filas consume 1.8"
+    },
+    {
+      "id": "aiku-prog-00051",
+      "language": "cpp",
+      "task_type": "debugging",
+      "difficulty": "hard",
+      "resumen": "La estructura de doble enlace del grafo de sesiones usa shared_ptr en ambas direcciones. Al soltar el grafo, e"
+    }
+  ],
+  "ejemplos_complejos": {
+    "n": 135,
+    "porcentaje": 46.6
+  },
+  "estadisticas": {
+    "total_ejemplos": 290,
+    "tokens_aprox": 355545,
+    "pct_executed": 78.28,
+    "pct_tool_calling": 80.34,
+    "pct_multidisciplinar": 16.55,
+    "pct_recovery": 39.66
+  },
+  "checksum_sha256": "294c7e58a62b351c11f85463cb586cedce1df6f529b32808d2c21c92f64d9516",
+  "parquet_bytes": 505635
+}
